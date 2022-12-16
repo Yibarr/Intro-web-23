@@ -1,0 +1,130 @@
+body {
+    font-family: 'Syne Mono', monospace;
+    font-size: 14px;
+    margin: 0
+}
+
+.navbar-container {
+    height: 96px;
+    border-bottom: 5px solid;
+    padding: 2% 5%;
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-background {
+    background: url("https://fossbytes.com/wp-content/uploads/2019/05/guido-van-rossum.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.title-container {
+    margin-left: 3%;
+}
+
+.title {
+    color: #000;
+    font-style: normal;
+    height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.title:hover {
+    color: #FFF;
+    background-color: #000;
+}
+
+.logo-container{ 
+    display: inline;
+}
+
+.logo {
+    width: 40px;
+}
+
+.posts-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-column {
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    width: 30%;
+    padding: 0 6%;
+}
+
+.repository-link:nth-child(4) {
+    color: red;
+}
+
+p::first-line {
+    color: blue;
+    text-transform: uppercase;
+}
+
+.experience {
+    padding: 0 6%;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.experience-item-card {
+    background-color: antiquewhite;
+    padding: 12px;
+    border-radius: 12px;
+    width: 25%;
+    min-height: 300px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        display: none;
+    }
+
+    .navbar-container {
+        justify-content: center;
+    }
+
+    .post-column {
+        display: block;
+    }
+
+    .post {
+        width: fit-content;
+    }
+
+    .posts-container {
+        display: block;
+    }
+
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .experience-item-card {
+        width: fit-content;
+        min-height: 120px;
+    }
+}
+
+td, th {
+    border: solid 1px;
+}
+
+table {
+    width: 100%
+}
